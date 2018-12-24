@@ -33,8 +33,8 @@ Following are the steps involved in creating a well-defined ML project:
 5. Predict the result
 
 DataBase
+![db1](https://user-images.githubusercontent.com/17385297/50398129-ff650000-0753-11e9-9e2f-3d54fdff016d.PNG)
 
-![db1](https://user-images.githubusercontent.com/17385297/50397952-aea0d780-0752-11e9-904d-532b15edd1cd.PNG/)
 
 
 ```python
@@ -84,6 +84,8 @@ print(model.predict(6.3))
 ```
 
 [Source1](https://copycoding.com/your-first-machine-learning-project-in-python-with-step-by-step-instructions/).
+
 [Source2](https://copycoding.com/your-second-machine-learning-project-with-this-famous-iris-dataset-in-python-part-5-of-9-/).
+
 [Source3](https://copycoding.com/machine-learning-project-in-python-to-predict-loan-approval-prediction-part-6-of-6-/).
 
