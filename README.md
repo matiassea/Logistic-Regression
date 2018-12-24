@@ -24,10 +24,66 @@ The logistic function looks like a big S and will transform any value into the r
 
 ### Application
 
+Following are the steps involved in creating a well-defined ML project:
+
+1. Understand and define the problem
+2. Analyse and prepare the data
+3. Apply the algorithms
+4. Reduce the errors
+5. Predict the result
+
+DataBase
+
+![db1](https://user-images.githubusercontent.com/17385297/50397952-aea0d780-0752-11e9-904d-532b15edd1cd.PNG/)
+
+
 ```python
-X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']] #seleccionar columnas del database
-X1 = X.fillna(0) #simpre limpiar database
-sns.set(style="ticks", color_codes=True)
-g = sns.pairplot(X1)
+import pandas
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.metrics import accuracy_score
+
+#Load training dataset
+url = "https://raw.githubusercontent.com/callxpert/datasets/master/data-scientist-salaries.cc"
+names = ['Years-experience', 'Salary']
+dataset = pandas.read_csv(url, names=names)
+
+# shape
+print(dataset.shape)
+
+# imprimir las primeras 2 lineas
+print(dataset.head(2))
+
+# descripcion estadistica
+print(dataset.describe())
+
+#visualize
+dataset.plot()
+plt.show()
+
+#Training dataset - used to train our model
+#Testing dataset - used to test if our model is making accurate predictions
+#Since our dataset is small (10 records) we will use 9 records for training the model and 1 record to evaluate the model. copy #paste the below commands to prepare our datasets.
+
+X = dataset[['Years-experience']]
+y = dataset['Salary']
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=101)
+
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(X_train,y_train)
+
+predictions = model.predict(X_test)
+print(accuracy_score(y_test,predictions))
+
+#We are getting 1.0 which is 100% accuracy for our model. Which is the ideal accuracy score. In Production systems, anything #over a 90% is considered a successful model
+
+print(model.predict(6.3))
+
 ```
+
+[Source1](https://copycoding.com/your-first-machine-learning-project-in-python-with-step-by-step-instructions/).
+[Source2](https://copycoding.com/your-second-machine-learning-project-with-this-famous-iris-dataset-in-python-part-5-of-9-/).
+[Source3](https://copycoding.com/machine-learning-project-in-python-to-predict-loan-approval-prediction-part-6-of-6-/).
 
