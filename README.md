@@ -33,6 +33,8 @@ Following are the steps involved in creating a well-defined ML project:
 5. Predict the result
 
 DataBase
+
+
 ![db1](https://user-images.githubusercontent.com/17385297/50398129-ff650000-0753-11e9-9e2f-3d54fdff016d.PNG)
 
 
