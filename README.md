@@ -21,6 +21,15 @@ The logistic function looks like a big S and will transform any value into the r
 [Source](https://www.kdnuggets.com/2018/02/tour-top-10-algorithms-machine-learning-newbies.html/).
 
 
+### Because “Logistic Regression” is (sometimes) enough
+
+Logistic regression is a very powerful algorithm, even for very complex problems it may do a good job. Take MNIST for example, you can achieve 95% accuracy using Logistic Regression only, it’s not a great result, but its more than good enough to make sure you pipeline works. Actually, with the right representation of the features, it can do a fantastic job. When dealing with non-linear problems, we sometimes try to represent the original data in a way that may be explained linearly. Here’s a small example of this idea: We want to perform a simple classification task on the following data:
+
+
+
+
+
+
 
 ### Application
 
