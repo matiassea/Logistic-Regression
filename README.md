@@ -91,3 +91,16 @@ print(model.predict(6.3))
 
 [Source3](https://copycoding.com/machine-learning-project-in-python-to-predict-loan-approval-prediction-part-6-of-6-/).
 
+
+
+
+
+
+
+
+
+
+
+
+
+
