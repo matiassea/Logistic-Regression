@@ -103,6 +103,34 @@ print(model.predict(6.3))
 
 
 
+Logistic Regression solves the limitation of Linear Regression in which the outcome variable (y) must be continuous.
+
+Logistic Regression is a Regression technique that is used when we have a categorical outcome (2 or more categories). This technique can be used to analyze and predict variables that are ‘Discrete’, ‘Nominal’ and ‘Ordered’. Logistic Regression is one of the most easily interpretable classification techniques in a Data Scientist’s portfolio. 
+
+Logistic Regression does not make any assumptions of Normality, Linearity and Homogenity of Variance. This is one of the reasons that Logistic Regression could be more powerful as these assumptions are rarely or if ever satisfied in the real world.
+
+
+![Logistic Regression 1](https://user-images.githubusercontent.com/17385297/58755931-fa9f3780-84bb-11e9-8d12-2a2bb3d0ff9f.PNG)
+
+
+
+An easy way to think of the difference between Linear and Logistic Regression is in Linear Regression, a person can predict a student’s test score (continuous target). In Logistic Regression, a person can assign ‘Pass’, ‘Fail’ categories to student’s scores and predict whether a student passed or failed.
+
+
+### Types of Logistic Regression
+
+1.Binary
+2.Multinomial
+3.Ordinal
+
+##### Binary Logistic Regression
+
+[Source1](https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview.html)
+
+    
+    
+
+
 
 
 
