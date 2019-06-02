@@ -131,13 +131,36 @@ An easy way to think of the difference between Linear and Logistic Regression is
     
 
 
+## Building A Logistic Regression in Python, Step by Step
+
+[Link](https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8)
+
+Logistic Regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). In other words, the logistic regression model predicts P(Y=1) as a function of X.
 
 
+Logistic Regression Assumptions
 
+1. Binary logistic regression requires the dependent variable to be binary.
+2. For a binary regression, the factor level 1 of the dependent variable should represent the desired outcome.
+3. Only the meaningful variables should be included.
+4. The independent variables should be independent of each other. That is, the model should have little or no multicollinearity.
+5. The independent variables are linearly related to the log odds.
+6. Logistic regression requires quite large sample sizes.
 
+Keeping the above assumptions in mind, let’s look at our dataset.
 
-
-
+```python
+import pandas as pd
+import numpy as np
+from sklearn import preprocessing
+import matplotlib.pyplot as plt 
+plt.rc("font", size=14)
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+import seaborn as sns
+sns.set(style="white")
+sns.set(style="whitegrid", color_codes=True)
+```
 
 
 
