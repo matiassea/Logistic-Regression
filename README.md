@@ -119,9 +119,9 @@ An easy way to think of the difference between Linear and Logistic Regression is
 
 ### Types of Logistic Regression
 
-1.Binary
-2.Multinomial
-3.Ordinal
+1.Binary /n
+2.Multinomial /n
+3.Ordinal /n
 
 ##### Binary Logistic Regression
 
